@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+.scroll-dist{
+    height: 1000px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+    height: 100vh;
+    width: 100vw;
+    max-width: 100vw;
+    font-family: 'Quicksand', sans-serif;
+    position: fixed;
+    inset: 0;
+}
+.row{
+    height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-img{
+   position: relative;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app-text{
+   position: relative;
 }
-
-.App-link {
-  color: #61dafb;
+.app-img-3{
+    bottom: 0;
+    right:20%;
+    transform: translateY(700);
+    width: 15vw;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-img-4{
+    top: 0;
+    right:0;
+    opacity: 0;
+    width: 15vw;
+    transform: translateY(-700);
+}
+.app-img-1{
+    opacity: 1;
+    top: 20%;
+    right: 25%;
+}
+.app-img-2{
+    opacity: 1;
+    top: 20%;
+    right: 5%;
+}
+.pages{
+    position: absolute;
+    inset: 0;
+    visibility: hidden;
+    transition: 300ms ease-in-out;
+}
+.pages-1{
+visibility: visible;
+}
+.texts{
+    position: absolute;
+    inset: 0;
+    visibility: hidden;
+    transition: 300ms ease-in-out;
+}
+.texts-1{
+visibility: visible;
 }
